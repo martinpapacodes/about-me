@@ -1,60 +1,80 @@
 'use strict';
 
-var name = prompt('What is your name?');
-
-alert('Hello ' + name + '! Hope you know me well.');
-
-var firstQuestion = prompt('Do you think I like the color blue?');
-
-    if ( firstQuestion.toLowerCase() === 'yes') {
-        // console.log('You are correct ' + name + '. I like the color blue.');
-        alert('You are correct ' + name + '. I like the color blue.');
-    } else {
-        // console.log('You are incorrect ' + name + '. I like the color blue.');
-        alert('You are incorrect ' + name + '. I like the color blue.');
-    }
-
-var secondQuestion = prompt('Do you think I am good looking?');
+function firstQuestion() {
+    var name = prompt('What is your name?');
     
-    if ( secondQuestion.toLowerCase() === 'yes') {
-        // console.log('You are absolutely correct ' + name + '!')
-        alert('You are absolutely correct ' + name + '!');
-    } else {
-        // console.log('Get out of here ' + name + '.');
-        alert('Get out of here ' + name + '.');
-
-    }
-
-var thirdQuestion = prompt('Do you think I like water?');
+    alert('Hello ' + name + '! Hope you know me well.');
     
-    if ( thirdQuestion.toLowerCase() === 'yes') {
-        // console.log('You are wrong ' + name + '. Water is too bland for my palate');
-        alert('You are wrong ' + name + '. Water is too bland for my palate');
-    } else {
-        // console.log('You are absolutely correct ' + name + '. Water is too bland for my palate');
-        alert('You are absolutely correct ' + name + '. Water is too bland for my palate.');
-    }
+    var firstQuestion = prompt('Do you think I like the color blue?');
+    
+        if ( firstQuestion.toLowerCase() === 'yes') {
+            // console.log('You are correct ' + name + '. I like the color blue.');
+            alert('You are correct ' + name + '. I like the color blue.');
+        } else {
+            // console.log('You are incorrect ' + name + '. I like the color blue.');
+            alert('You are incorrect ' + name + '. I like the color blue.');
+        }
+}
+firstQuestion();
 
-var fourthQuestion = prompt('Do you think I like the winter?');
-    
-    if ( fourthQuestion.toLowerCase() === 'yes') {
-        // console.log('You are incorrect ' + name + '. I do not like the cold.');
-        alert('You are incorrect ' + name + '. I do not like the cold.');
-    } else {
-        // console.log('You are absolutely correct ' + name + '. I prefer warm weather.');
-        alert('You are absolutely correct ' + name + '. I prefer warm weather.');
-    }
+function secondQuestion() {
 
-var fifthQuestion = prompt('Do you think I like the Amazon?');
+    var secondQuestion = prompt('Do you think I am good looking?');
+        
+        if ( secondQuestion.toLowerCase() === 'yes') {
+            // console.log('You are absolutely correct ' + name + '!')
+            alert('You are absolutely correct ' + name + '!');
+        } else {
+            // console.log('Get out of here ' + name + '.');
+            alert('Get out of here ' + name + '.');
     
-    if ( fifthQuestion.toLowerCase() === 'yes') {
-        // console.log('You are wrong ' + name + '.');
-        alert('You are wrong ' + name + '.'); 
-    } else {
-        // console.log('You are absolutely correct ' + name + '. I do not like the Amazon. Too many mosquitoes.');
-        alert('You are absolutely correct ' + name + '. I do not like the Amazon. Too many mosquitoes.');
-    }
-    
+        }
+}
+secondQuestion();
+
+function thirdQuestion() {
+
+    var thirdQuestion = prompt('Do you think I like water?');
+        
+        if ( thirdQuestion.toLowerCase() === 'yes') {
+            // console.log('You are wrong ' + name + '. Water is too bland for my palate');
+            alert('You are wrong ' + name + '. Water is too bland for my palate');
+        } else {
+            // console.log('You are absolutely correct ' + name + '. Water is too bland for my palate');
+            alert('You are absolutely correct ' + name + '. Water is too bland for my palate.');
+        }
+}
+thirdQuestion();
+
+function fourthQuestion() {
+
+    var fourthQuestion = prompt('Do you think I like the winter?');
+        
+        if ( fourthQuestion.toLowerCase() === 'yes') {
+            // console.log('You are incorrect ' + name + '. I do not like the cold.');
+            alert('You are incorrect ' + name + '. I do not like the cold.');
+        } else {
+            // console.log('You are absolutely correct ' + name + '. I prefer warm weather.');
+            alert('You are absolutely correct ' + name + '. I prefer warm weather.');
+        }
+}
+fourthQuestion();
+
+function fifthQuestion() {
+
+    var fifthQuestion = prompt('Do you think I like the Amazon?');
+        
+        if ( fifthQuestion.toLowerCase() === 'yes') {
+            // console.log('You are wrong ' + name + '.');
+            alert('You are wrong ' + name + '.'); 
+        } else {
+            // console.log('You are absolutely correct ' + name + '. I do not like the Amazon. Too many mosquitoes.');
+            alert('You are absolutely correct ' + name + '. I do not like the Amazon. Too many mosquitoes.');
+        }
+}
+fifthQuestion();
+function sixthQuestion() {
+
     var counter = 0;
     while ( counter !== 4) {
     
@@ -74,13 +94,17 @@ var fifthQuestion = prompt('Do you think I like the Amazon?');
     if (counter === 4) {
 			alert('You have reached the maximum attempt. My favorite number is 24. ');
     }    
+}
+sixthQuestion () 
+    
+function seventhQuestion() {
 
     var counter = 0;
     while ( counter !== 6) {
         
        
         var iceCreamFlavors = ['vanilla', 'chocolate', 'strawberry', 'coconut', 'hazelnut', 'horchata'];
-
+    
         var seventhQuestion = prompt('What is my favorite ice cream flavor?').toLowerCase();
         
         for(var i = 0; i <iceCreamFlavors.length; i++) {
@@ -92,7 +116,7 @@ var fifthQuestion = prompt('Do you think I like the Amazon?');
                 break;
             }   
         }  
-
+    
         if (seventhQuestion === iceCreamFlavors[i]) {
             break;
         } 
@@ -102,5 +126,7 @@ var fifthQuestion = prompt('Do you think I like the Amazon?');
     if (counter === 6) {
         alert('Maximum attempt reached. My favorite ice cream flavors are vanilla, chocolate, strawberry, coconut, hazelnut, and horchata!');
     }
-
+    
     alert('Thank you for participating ' + name + '.');
+}
+
