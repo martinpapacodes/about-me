@@ -81,11 +81,11 @@ var fifthQuestion = prompt('Do you think I like the Amazon?');
        
         var iceCreamFlavors = ['vanilla', 'chocolate', 'strawberry', 'coconut', 'hazelnut', 'horchata'];
 
-        var seventhQuestion = prompt('What is my favorite ice cream flavor?[Vanilla, Chocolate, Strawberry, Coconut, Hazelnut, Horchata]').toLowerCase();
+        var seventhQuestion = prompt('What is my favorite ice cream flavor?').toLowerCase();
         
         for(var i = 0; i <iceCreamFlavors.length; i++) {
-            if (seventhQuestion === 'vanilla') {
-                alert('You are a correct. My favorite flavor is plain ole vanilla.');
+            if (seventhQuestion === iceCreamFlavors[i]) {
+                alert('You are a correct. One of my favorite flavor is ' + iceCreamFlavors[i]);
                 break; 
             } else {
                 alert('Keep trying.......');
@@ -93,15 +93,14 @@ var fifthQuestion = prompt('Do you think I like the Amazon?');
             }   
         }  
 
-        if (seventhQuestion === 'vanilla') {
+        if (seventhQuestion === iceCreamFlavors[i]) {
             break;
         } 
         counter++; 
     }
     
     if (counter === 6) {
-        alert('Maximum attempt reached. My favorite ice cream is Vanilla!');
+        alert('Maximum attempt reached. My favorite ice cream flavors are vanilla, chocolate, strawberry, coconut, hazelnut, and horchata!');
     }
-
 
     alert('Thank you for participating ' + name + '.');
