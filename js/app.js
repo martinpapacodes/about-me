@@ -153,13 +153,16 @@ function seventhQuestion() {
     }
    
     counter++
+    
+    if (counter === 6) {
+
+        alert('Maximum attempt reached. My favorite ice cream flavors are vanilla, chocolate, strawberry, coconut, hazelnut, and horchata!');
+    }
 }
 
-if (counter === 6) {
-    alert('Maximum attempt reached. My favorite ice cream flavors are vanilla, chocolate, strawberry, coconut, hazelnut, and horchata!');
-}
 
 alert('Your total score is ' + totalScore + ' out of 7. Thank you for participating ' + name + '.');
+
 
 
 
