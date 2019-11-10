@@ -3,6 +3,10 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
+    background-color: pink;
+    padding: 10px; 
+    margin: 20px;
+    text-align: center;
 }
 
