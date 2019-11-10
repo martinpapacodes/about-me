@@ -133,7 +133,7 @@ function seventhQuestion() {
     var found = false;
     var iceCreamFlavors = ['vanilla', 'chocolate', 'strawberry', 'coconut', 'hazelnut', 'horchata'];
 
-    while(counter !== 6) {
+    while (counter !== 6) {
 
         var seventhQuestion = prompt('What is my favorite ice cream flavor?').toLowerCase();
 
@@ -141,42 +141,23 @@ function seventhQuestion() {
 
             if (iceCreamFlavors[i] === seventhQuestion) {
                 found = true;
-            }   
+            }
         }
         if (found) {
             alert('Great job! ' + seventhQuestion + ' is one of my favorite flavors.');
             totalScore++;
-            break;_
+            break; _
+        } else {
+            alert('Keep guessing....');
         }
-        // } else {
-        //     alert('Keep Trying....');
-        // }
-
-        counter++
     }
-
-    if (counter === 6) {
-        alert('Maximum attempt reached. My favorite ice cream flavors are vanilla, chocolate, strawberry, coconut, hazelnut, and horchata!');
-    }
+   
+    counter++
 }
 
-
-// for (var i = 0; i < iceCreamFlavors.length; i++) {
-//     if (seventhQuestion === iceCreamFlavors[i]) {
-//         alert('You are a correct. One of my favorite flavor is ' + iceCreamFlavors[i]);
-//         totalAnswered++;
-//         break;
-//     } else {
-//         alert('Keep trying.......');
-//         break;
-//     }
-// }
-
-//     if (seventhQuestion === iceCreamFlavors[i]) {
-//         break;
-//     }
-//     counter++;
-
+if (counter === 6) {
+    alert('Maximum attempt reached. My favorite ice cream flavors are vanilla, chocolate, strawberry, coconut, hazelnut, and horchata!');
+}
 
 alert('Your total score is ' + totalScore + ' out of 7. Thank you for participating ' + name + '.');
 
